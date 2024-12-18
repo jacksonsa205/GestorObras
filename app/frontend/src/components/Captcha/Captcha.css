@@ -1,0 +1,172 @@
+
+  .captcha-container{
+    background-color: #0066ff;
+    width: 800px;
+    height: 420px;
+    max-width: 100%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centraliza horizontalmente */
+    
+  }
+
+  .captcha-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    width: 380px;
+    max-width: 100%;
+    height: 420px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 50px 8px 8px 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+    margin: auto; /* Centraliza horizontalmente */
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 80%;
+    position: relative; /* Adicionado para posicionamento do ícone */
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 30px;
+    color:#888;
+  }
+  
+  input {
+    padding: 8px;
+    margin-left: 5px;
+    font-size: 1rem;
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    border: 1px solid #D1D5E4; /* Cor da borda dos inputs */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+    background-color: #fff; /* Cor de preenchimento desejada */
+  }
+
+  input:hover {
+  background-color: #f0f0f0; /* Cor de fundo alterada no hover */
+  border: 1px solid #0066ff; /* Cor da borda dos inputs */
+  }
+  
+  input:focus {
+    border-color: #0066ff; /* Cor da borda alterada quando focado */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    border: 2px solid #80B3FF; /* Aumentei a espessura da borda para 2px */
+  }
+
+  select {
+    padding: 8px;
+    margin-left: 5px;
+    font-size: 1rem;
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    border: 1px solid #D1D5E4; /* Cor da borda dos inputs */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+    background-color: #fff; /* Cor de preenchimento desejada */
+  }
+
+  select:hover {
+  background-color: #f0f0f0; /* Cor de fundo alterada no hover */
+  border: 1px solid #0066FF; /* Cor da borda dos inputs */
+  }
+  
+  input:focus {
+    border-color: #0066FF; /* Cor da borda alterada quando focado */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    border: 2px solid #80B3FF; /* Aumentei a espessura da borda para 2px */
+  }
+
+  select {
+    padding: 8px;
+    margin-left: 5px;
+    font-size: 1rem;
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    border: 1px solid #D1D5E4; /* Cor da borda dos inputs */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+    background-color: #fff; /* Cor de preenchimento desejada */
+  }
+
+  select:hover {
+  background-color: #f0f0f0; /* Cor de fundo alterada no hover */
+  border: 1px solid #0066FF; /* Cor da borda dos inputs */
+  }
+  
+  select:focus {
+    border-color: #0066FF; /* Cor da borda alterada quando focado */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    border: 2px solid #80B3FF; /* Aumentei a espessura da borda para 2px */
+  }
+
+  .button-login {
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 80%;
+    border-radius: 4px; /* Borda arredondada */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .button-login:hover {
+    background-color: #0356C9; /* Cor alterada no hover */
+  }
+
+  .captcha-links a {
+    width: 80%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente, o primeiro à esquerda e o segundo à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro (opcional) */
+    text-decoration: none;
+    color: #333;
+  }
+
+  .captcha-links a:hover,
+  .captcha-links a:active {
+    color: #660099; /* Cor desejada para hover e clique */
+  }
+
+
+    /* Estilos para telas menores */
+@media (max-width: 768px) {
+ 
+    .captcha-container {
+      flex-direction: column;
+      height: 620px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .captcha-input {
+      width: 100%; /* Ocupa 100% da largura do contêiner */
+      border-radius: 50px 50px 8px 8px;
+      height: 400px;
+      
+    }
+  
+    .captcha-links{
+      margin-bottom: 5px;
+    }
+  
+  }
+    

@@ -1,0 +1,152 @@
+.dani-chat-esse-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dani-chat-esse-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 75%;
+    width: auto;
+    max-height: 90%;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.dani-chat-esse-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.dani-chat-esse-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dani-chat-esse-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5e6e82;
+}
+
+.dani-chat-esse-exportar-button{
+    font-size: 18px;
+    color: #008000;
+    margin-left: 15px;
+    border: 1px solid #008000;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.dani-chat-esse-exportar-button:hover {
+    background-color: #008000;
+    color: #fff;
+}
+
+.dani-chat-esse-exportar svg {
+    font-size: inherit;
+}
+
+.dani-chat-esse-exportar span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.dani-chat-esse-descricao {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #5e6e82;
+}
+
+.dani-chat-esse-table-description {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5e6e82;
+}
+
+.dani-chat-esse-container {
+    padding: 20px;
+    margin-top: 70px;
+    transition: margin-left 0.3s ease;
+    border-radius: 8px;
+    background-color: #f9faff;
+}
+
+.dani-chat-esse-container.closed {
+    margin-left: 70px;
+}
+
+.dani-chat-esse-container.open {
+    margin-left: 238px;
+}
+
+.advanced-table-container {
+    overflow-x: auto;
+}
+
+.react-table {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    background-color: transparent;
+    color: #5e6e82;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .filters-container {
+        padding: 5px;
+    }
+
+    .filter-dropdown-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters-container {
+        padding: 5px;
+    }
+
+    .filter-dropdown-container {
+        width: 100%;
+    }
+
+    .dani-chat-esse-container.closed {
+        margin-left: 0;
+        z-index: 2;
+        position: relative;
+        overflow-y: auto;
+    }
+}

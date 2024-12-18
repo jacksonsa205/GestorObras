@@ -1,0 +1,257 @@
+body {
+    background-color: #f9faff; /* Substitua pela cor desejada */
+}
+
+.dashboard-title {
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: bold; /* Adiciona negrito */
+    color: #5e6e82;
+}
+
+.dashboard-descricao-section {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px; 
+}
+
+.dashboard-descricao {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5e6e82;
+}
+
+
+.section-dashboard {
+    margin-top: 35px;
+    transition: margin-left 0.3s ease; /* Adicionando transição para suavizar a animação */
+    /* border: 1px solid #f9faff;  */
+    border-radius: 8px; /* Adicionando arredondamento de 8px */
+    padding: 20px; /* Adicionando espaçamento interno para afastar o conteúdo da borda */
+    /* margin-right: 10px; */
+    background-color: #f9faff;
+}
+
+.section-dashboard.closed {
+    margin-left: 70px; /* Defina o valor desejado quando a barra lateral estiver fechada */
+}
+
+.section-dashboard.open {
+    margin-left: 242px; /* Defina o valor desejado quando a barra lateral estiver aberta */
+}
+
+.cardBody-section {
+    margin-top: 5px;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens horizontalmente e distribui o espaço igualmente */
+}
+
+.dashboard-chart-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 26px; 
+    margin-top: 20px;
+}
+
+.dashboard-chart-container{
+    background-color:#fff;
+    margin-top: 20px;
+    background-color: #fff; /* Cor de fundo cinza claro */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para profundidade */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+}
+
+.dashboard-chart-container2 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    width: 46.5%;
+    
+}
+
+.dashboard-chart-descricao{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #5e6e82;
+}
+
+.toggle-button {
+    background-color: #39374e; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    color: #fff;
+    width: 35px; /* Largura do botão */
+    height: 35px; /* Altura do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button:hover {
+    background-color: #4b4d60;
+    color: #fff; 
+}
+
+.icon-transition {
+    transition: opacity 0.3s; /* Suaviza a transição */
+    opacity: 1;
+}
+
+.icon-hidden {
+    opacity: 0;
+}
+
+
+
+.thermometer-title {
+    text-align: center; /* Centraliza o título */
+    font-weight: bold;  /* Deixa o texto em negrito */
+    margin-top: 10px;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.thermometer-value {
+    display: flex;
+    flex-direction: column; /* Alinha os componentes verticalmente */
+    align-items: flex-start; /* Alinha os componentes à esquerda */
+    margin-bottom: 10px;
+    margin-left: 9px;
+}
+
+.painel-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinha os itens no início do contêiner */
+}
+
+.card-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os gauges no início do contêiner */
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+.thermometer-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    padding: 0 10px;
+    width: 305px;
+    margin-top: 10px; /* Ajuste conforme necessário */
+    height: 435px;
+    overflow-y: auto;
+}
+
+.info-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.dashboard-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.dashboard-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative; /* Adicionado para garantir que o botão esteja dentro do modal */
+}
+
+.dashboard-modal-content-sub {
+    text-align: left;
+}
+
+.dashboard-modal-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #5a5278;
+}
+
+.dashboard-modal-subtitle {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.dashboard-modal-paragraph {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.dashboard-definition-label {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.dashboard-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dashboard-close:hover,
+.dashboard-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Mídia Queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    /* .section-dashboard.open,
+    .section-dashboard.closed {
+        margin-left: 0;
+    } */
+
+    .cardBody-section {
+        flex-direction: column; /* Altera para orientação de coluna em telas menores */
+        align-items: center; /* Alinha os cartões ao centro quando empilhados */
+        width: 100%;
+        
+    }
+    
+    
+}

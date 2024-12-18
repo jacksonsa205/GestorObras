@@ -1,0 +1,30 @@
+{
+  "name": "chat-dani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@supabase/supabase-js": "^2.46.2",
+    "activedirectory": "^0.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.6.1",
+    "promise": "^8.3.0",
+    "qrcode": "^1.5.4",
+    "react-router-dom": "^6.15.0",
+    "socket.io-client": "^4.7.2",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

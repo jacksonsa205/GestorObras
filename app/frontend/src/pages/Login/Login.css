@@ -1,0 +1,453 @@
+.body-container {
+  /* background-image: url('../../assets/images/logo/fundoLogin.jpg'); */
+  background-color: #39374e;
+  background-size: cover;
+  /* Ajuste para cobrir 100% da tela */
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* 100% da altura da viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: transparent;
+  width: 800px;
+  height: 420px;
+  max-width: 100%;
+  display: flex;
+  
+  margin: auto;
+  /* Centraliza horizontalmente */
+
+}
+
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  max-width: 100%;
+  height: 420px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  
+}
+
+.logo {
+  width: 0; /* Começa com largura 0 */
+  height: 0; /* Começa com altura 0 */
+  object-fit: contain; /* Ajuste para que a imagem seja contida dentro da div */
+  animation: grow 1s forwards; /* Aplica a animação */
+}
+
+@keyframes grow {
+  to {
+    width: 300px; /* Largura final */
+    height: 120px; /* Altura final */
+  }
+}
+
+.welcome {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+  letter-spacing: 5px;
+  /* Ajuste o valor conforme necessário */
+}
+
+.message {
+  font-size: 20px;
+  color: #666;
+  font-weight: bold;
+  /* Adiciona negrito ao texto */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 80%;
+  position: relative;
+  /* Adicionado para posicionamento do ícone */
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #666666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 8px;
+  margin-left: 5px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #D1D5E4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  background-color: #fff;
+}
+
+input:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #39374e;
+}
+
+input:focus {
+  border-color: #39374e;
+  outline: none;
+  border: 2px solid #80B3FF;
+}
+
+.button-login {
+  padding: 10px;
+  background-color: #39374e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 80%;
+  border-radius: 4px;
+  /* Borda arredondada */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-login:hover {
+  background-color: #2c2945;
+  /* Cor alterada no hover */
+}
+
+.login-links {
+  width: 80%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* Distribui os itens igualmente, o primeiro à esquerda e o segundo à direita */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro (opcional) */
+}
+
+.login-senha a {
+  text-decoration: none;
+  color: #333;
+}
+
+.login-cadastro a {
+  text-decoration: none;
+  color: #0066ff;
+}
+
+.login-cadastro a:hover,
+.login-cadastro a:active {
+  color: #2c2945;
+  /* Cor desejada para hover e clique */
+}
+
+.login-senha a:hover,
+.login-senha a:active {
+  color: #660099;
+  /* Cor desejada para hover e clique */
+}
+
+
+/* Estilo do Modal Alert */
+
+.custom-modal {
+  position: fixed;
+  bottom: 20px;
+  /* Ajusta a posição vertical para o canto inferior */
+  right: 20px;
+  /* Ajusta a posição horizontal para o canto direito */
+  background-color: #fff;
+  /* Cor de fundo padrão */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  /* Cor do texto */
+  z-index: 9999;
+  border-radius: 8px;
+}
+
+/* Adiciona estilos de acordo com a mensagem de erro */
+.custom-modal.error {
+  background-color: #D50000;
+  /* Cor de fundo para mensagens de erro */
+}
+
+/* Adiciona estilos de acordo com a mensagem de sucesso */
+.custom-modal.success {
+  background-color: #0066ff;
+  /* Cor de fundo para mensagens de sucesso */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  margin-top: 10px;
+  animation: progress 5s linear forwards;
+  /* Animar por 5 segundos */
+}
+
+/* Adiciona estilos de acordo com a mensagem de erro */
+.custom-modal.error .progress-bar {
+  background-color: #E66C64;
+  /* Cor da barra para mensagens de erro */
+}
+
+/* Adiciona estilos de acordo com a mensagem de sucesso */
+.custom-modal.success .progress-bar {
+  background-color: #33CCFF;
+  /* Cor da barra para mensagens de sucesso */
+}
+
+
+.custom-modal-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo escuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+}
+
+
+
+
+.modal-content-alert {
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  /* Fundo branco */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal-content-captcha {
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  /* Fundo branco */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal-title-alert {
+  color: #0066ff;
+  /* Azul */
+  font-weight: bold;
+  /* Negrito */
+  font-size: 22px;
+  margin-bottom: 20px;
+  /* Espaçamento inferior */
+}
+
+.modal-message-alert {
+  text-align: center;
+  margin-bottom: 20px;
+  /* Espaçamento inferior */
+  font-size: 1rem;
+  font-weight: bold;
+  /* Negrito */
+}
+
+
+.modal-message-alert p {
+  margin-bottom: 10px;
+}
+
+.modal-message-alert ul {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: left;
+  /* Alinhar o texto à esquerda */
+  padding-left: 0;
+  /* Remover o padding padrão */
+}
+
+.modal-message-alert ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #666666;
+  ;
+  text-align: center;
+  /* Centralizar o texto */
+  margin-bottom: 25px;
+  /* Espaçamento entre os itens da lista */
+}
+
+.modal-message-alert p:nth-child(2) {
+  font-weight: bold;
+  /* Negrito */
+  color: red;
+  /* Vermelho */
+}
+
+
+.close-button {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* Adicione esta linha */
+  border-radius: 50%;
+  /* Se desejar bordas arredondadas */
+}
+
+.close-button-captcha {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* Adicione esta linha */
+  border-radius: 50%;
+  /* Se desejar bordas arredondadas */
+}
+
+.close-button:hover {
+  background-color: #666666;
+  /* Adicione esta linha */
+
+}
+
+.close-button:hover svg {
+  color: #fff;
+
+}
+
+.close-button:focus {
+  outline: none;
+}
+
+.close-button svg {
+  color: #666666;
+  width: 20px;
+  height: 20px;
+}
+
+
+.close-button-captcha:hover {
+  background-color: #666666;
+  /* Adicione esta linha */
+
+}
+
+.close-button-captcha:hover svg {
+  color: #fff;
+
+}
+
+.close-button-captcha:focus {
+  outline: none;
+}
+
+.close-button-captcha svg {
+  color: #666666;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes progress {
+  to {
+    width: 0;
+  }
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+
+  .login-container {
+    flex-direction: column;
+    height: 620px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .login-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 220px;
+  }
+
+  .login-input {
+    width: 100%;
+    /* Ocupa 100% da largura do contêiner */
+    border-radius: 50px 50px 8px 8px;
+    height: 400px;
+
+  }
+
+  .logo {
+    margin-top: 15px;
+    width: 380px;
+    height: 150px;
+    /* definindo altura igual à largura para tornar a imagem um círculo */
+    object-fit: cover;
+    /* mantém a proporção da imagem ao cobrir o contêiner */
+  }
+
+  .welcome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .login-links {
+    margin-bottom: 5px;
+  }
+
+}

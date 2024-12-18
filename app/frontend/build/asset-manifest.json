@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4a07727.css",
+    "main.js": "/static/js/main.a6840b82.js",
+    "static/js/592.5968eae1.chunk.js": "/static/js/592.5968eae1.chunk.js",
+    "static/media/signalmonitoLogoDash2.png": "/static/media/signalmonitoLogoDash2.0fd4e3ae35a9a8d92efd.png",
+    "static/media/signalmonitoLogoDash5.png": "/static/media/signalmonitoLogoDash5.79740c4e6d1ea147398d.png",
+    "static/media/icone_BackBone.png": "/static/media/icone_BackBone.8d04c5014d4e53c496ee.png",
+    "static/media/VivoTypeW05-Regular.woff2": "/static/media/VivoTypeW05-Regular.9f4bdb2be0565a53804b.woff2",
+    "static/media/VivoTypeW05-Bold.woff2": "/static/media/VivoTypeW05-Bold.d8390707e99926463ad6.woff2",
+    "static/media/VivoTypeW05-Light.woff2": "/static/media/VivoTypeW05-Light.5d95cbacdee7c3ed8c83.woff2",
+    "static/media/user.png": "/static/media/user.a69380c2d996297cac15.png",
+    "static/media/icone_prioridade1.png": "/static/media/icone_prioridade1.a11a74d4c0adf843b58e.png",
+    "static/media/icone_prioridade2.png": "/static/media/icone_prioridade2.ba6ca79501587fdd5842.png",
+    "static/media/signalmonitoLogoDash4.png": "/static/media/signalmonitoLogoDash4.d2da5f075e573978324b.png",
+    "static/media/icone_OLT.png": "/static/media/icone_OLT.60fd73c25caad2af48d8.png",
+    "index.html": "/index.html",
+    "main.c4a07727.css.map": "/static/css/main.c4a07727.css.map",
+    "main.a6840b82.js.map": "/static/js/main.a6840b82.js.map",
+    "592.5968eae1.chunk.js.map": "/static/js/592.5968eae1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4a07727.css",
+    "static/js/main.a6840b82.js"
+  ]
+}

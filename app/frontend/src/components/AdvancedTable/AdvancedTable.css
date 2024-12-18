@@ -1,0 +1,181 @@
+.advanced-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* AdvancedTable.css */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.advanced-table th,
+.advanced-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 10px;
+}
+
+.advanced-table th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.advanced-table .table-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.advanced-table .table-options>div {
+    margin-top: 10px;
+}
+
+.advanced-table .pagination {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.advanced-table .page-navigation {
+    border: none;
+}
+
+.advanced-table input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.advanced-table .label-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.advanced-table label {
+    margin-left: 10px;
+}
+
+.advanced-table select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.advanced-table .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advanced-table .page-info {
+    margin-bottom: 10px;
+}
+
+.advanced-table .page-navigation {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.advanced-table button {
+    background-color: #39374e;
+    color: white;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.advanced-table button:hover {
+    background-color: #2c2945;
+}
+
+.advanced-table button:disabled,
+.advanced-table button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .advanced-table th,
+    .advanced-table td {
+        font-size: 14px;
+    }
+
+    .advanced-table input[type="text"],
+    .advanced-table select {
+        width: 100%;
+    }
+
+    .advanced-table .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advanced-table .page-navigation {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .advanced-table button {
+        padding: 4px 8px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .advanced-table .page-navigation button {
+        display: inline-block;
+        background-color: #39374e;
+    }
+
+    .advanced-table .page-navigation button:first-child,
+    .advanced-table .page-navigation button:last-child {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .advanced-table th,
+    .advanced-table td {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,34 @@
+.custom-actions {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.custom-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.custom-select-all,
+.custom-clear-all {
+    cursor: pointer;
+    background-color: #5a5278;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+}
+
+.custom-select-all:hover,
+.custom-clear-all:hover {
+    background-color: #39374e;
+}
+
+.custom-clear-all.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}

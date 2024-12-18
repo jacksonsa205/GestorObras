@@ -1,0 +1,58 @@
+.card-three {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 205px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-three-price-tag {
+  display: flex;
+  align-items: baseline;
+}
+
+.card-three-dollar-sign {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-three-icon {
+  font-size: 34px;
+  font-weight: bold;
+  color: #6c757d;
+  transition: transform 0.3s ease;
+}
+
+.card-three-icon:hover{
+  transform: scale(1.2);
+}
+
+.card-three-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.card-three-percentage {
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.card-three-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  height: 8px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.card-three-progress {
+  height: 100%;
+}
+
+/* Novo estilo para alinhar os elementos lado a lado */
+.card-three-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

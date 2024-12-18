@@ -1,0 +1,293 @@
+/* Estilos do mapa Leaflet */
+
+.ocorrencias-mapa-movel-info {
+    position: absolute;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; /* Certifique-se de que o z-index seja maior que o do mapa */
+    transition: left 0.3s ease; /* Transição suave para a mudança de posição */
+}
+
+.ocorrencias-mapa-movel-info.hide-mapa {
+    /* Estilos quando isShowHideMapa é false */
+    background-color: transparent; /* Exemplo: fundo vermelho */
+    padding: 0;
+    padding-top: 10px;
+}
+
+.ocorrencias-mapa-movel-cardBody-section {
+    margin-top: 120px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ocorrencias-mapa-movel-table-section {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Adicionado para posicionamento absoluto do ícone */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o círculo */
+}
+
+
+.ocorrencias-mapa-movel-descricao-section {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: 10px;
+}
+
+.ocorrencias-mapa-movel-descricao-button{
+    font-size: 16px;
+    color: #5e6e82;
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+
+.ocorrencias-mapa-movel-info.closed {
+    left: 90px; /* Posição quando o menu está fechado */
+}
+
+.ocorrencias-mapa-movel-info.open {
+    left: 260px; /* Posição quando o menu está aberto */
+}
+
+.ocorrencias-mapa-movel-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5e6e82;
+}
+
+.ocorrencias-mapa-movel-descricao {
+    font-size: 16px;
+    color: #5e6e82;
+    margin-top: 5px;
+}
+
+
+#map.custom-popup {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.leaflet-container {
+    overflow: inherit !important;
+}
+
+.ocorrencias-mapa-movel-container {
+    padding: 20px;
+    margin-top: 70px;
+    transition: margin-left 0.3s ease;
+    border-radius: 8px;
+    background-color: #f9faff;
+}
+
+.ocorrencias-mapa-movel-container.closed {
+    margin-left: 70px;
+}
+
+.ocorrencias-mapa-movel-container.open {
+    margin-left: 238px;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#map {
+    transition: margin-left 0.3s ease;
+}
+
+.ocorrencias-mapa-movel-container.open #map {
+    margin-left: 238px;
+}
+
+.ocorrencias-mapa-movel-container.closed #map {
+    margin-left: 70px;
+}
+
+div.leaflet-control-layers.leaflet-control.leaflet-control-layers-expanded section.leaflet-control-layers-list div label span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+}
+
+.leaflet-control-layers-selector {
+    margin: 5px !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+}
+
+/* Estilos do popup personalizado */
+.custom-popup .leaflet-popup-content-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #5e6e82;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-popup .leaflet-popup-tip-container {
+    width: 30px;
+    height: 15px;
+}
+
+.custom-popup .leaflet-popup-tip {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #2c3e50;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos do card lateral de informações do marcador */
+#infoCard {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#tituloInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#codigoTqa {
+    font-size: 14px;
+    color: #666;
+}
+
+#rotaIda {
+    font-size: 14px;
+    color: #666;
+}
+
+#fecharInfo {
+    margin-top: 10px;
+}
+
+.ocorrencias-mapa-movel-filter-label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.ocorrencias-mapa-movel-filter-icon{
+    margin-right: 5px;
+    font-size: 18px;
+    color: #5a5278
+}
+
+.ocorrencias-mapa-movel-filtro-section {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Adicionado para posicionamento absoluto do ícone */
+    
+}
+
+.ocorrencias-mapa-movel-filters-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ocorrencias-mapa-movel-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.ocorrencias-mapa-movel-filter-column {
+    flex: 1;
+    min-width: 200px; /* Ajuste conforme necessário */
+}
+
+
+
+.ocorrencias-mapa-movel-date-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.ocorrencias-mapa-movel-filter-datepicker {
+    width: 100%;
+}
+
+.ocorrencias-mapa-movel-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.ocorrencias-mapa-movel-search-button {
+    padding: 10px;
+    background-color: #39374e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 40%;
+    border-radius: 4px;
+    /* Borda arredondada */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ocorrencias-mapa-movel-search-button:hover{
+    background-color: #2c2945;
+}
+
+.ocorrencias-mapa-movel-search-button.loading {
+    cursor: not-allowed;
+    opacity: 0.6;
+    color: #fff;
+}

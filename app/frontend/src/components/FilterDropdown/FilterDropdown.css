@@ -1,0 +1,93 @@
+/* Adicione estas regras ao seu arquivo CSS existente */
+
+.filter-dropdown-container {
+    margin-bottom: 20px;
+}
+
+.react-select__control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #5a5278 !important; /* Borda do dropdown */
+    box-shadow: none !important; /* Remove a sombra padrão */
+}
+
+.react-select__control--is-focused {
+    border-color: #5a5278 !important; /* Borda ao focar */
+    box-shadow: 0 0 0 1px #5a5278 !important; /* Sombra ao focar */
+}
+
+.react-select__value-container {
+    overflow: auto;
+    max-height: 132px;
+}
+
+label {
+    font-size: 16px; /* Tamanho da fonte da label */
+    margin-bottom: 8px; /* Espaçamento abaixo da label */
+    display: block;
+    transition: opacity 0.3s; /* Adiciona uma transição suave para a opacidade */
+}
+
+.custom-checkbox {
+    margin-right: 10px;
+    border: 1px solid #5a5278 !important;
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Adiciona uma transição suave para a cor de fundo e a cor da borda */
+}
+
+.custom-checkbox:checked {
+    background-color: #5a5278 !important;
+    border: 1px solid #5a5278 !important;
+}
+
+.custom-checkbox:disabled {
+    cursor: not-allowed;
+}
+
+/* Estilo para o valor selecionado */
+.react-select__multi-value {
+    background-color: #5a5278;
+    color: white;
+    border-radius: 4px;
+    font-size: 8px;
+    margin: 2px 5px;
+}
+
+/* Estilo para o indicador de dropdown */
+.react-select__dropdown-indicator {
+    color: #5a5278;
+}
+
+/* Estilo para o menu de opções */
+.react-select__menu {
+    border: 1px solid #5a5278;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Estilo para as opções no menu */
+.react-select__option {
+    padding: 8px 12px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo ao passar o mouse */
+}
+
+.react-select__option:hover {
+    background-color: #f9faff;
+}
+
+/* Layout para tablets */
+@media (max-width: 768px) {
+    .filter-dropdown-container {
+        width: 100%;
+    }
+}
+
+/* Layout para celulares */
+@media (max-width: 480px) {
+    .filter-dropdown-container {
+        width: 100%;
+    }
+}

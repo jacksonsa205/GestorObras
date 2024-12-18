@@ -1,0 +1,144 @@
+body {
+    background-color: #f9faff; /* Substitua pela cor desejada */
+}
+
+.dashboard-title {
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: bold; /* Adiciona negrito */
+    color: #5e6e82;
+}
+
+.dashboard-descricao-section {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.dashboard-descricao {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5e6e82;
+}
+
+
+.section-dashboard {
+    margin-top: 35px;
+    transition: margin-left 0.3s ease; /* Adicionando transição para suavizar a animação */
+    /* border: 1px solid #f9faff;  */
+    border-radius: 8px; /* Adicionando arredondamento de 8px */
+    padding: 20px; /* Adicionando espaçamento interno para afastar o conteúdo da borda */
+    /* margin-right: 10px; */
+    background-color: #f9faff;
+}
+
+.section-dashboard.closed {
+    margin-left: 70px; /* Defina o valor desejado quando a barra lateral estiver fechada */
+}
+
+.section-dashboard.open {
+    margin-left: 242px; /* Defina o valor desejado quando a barra lateral estiver aberta */
+}
+
+.cardBody-section {
+    margin-top: 5px;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens horizontalmente e distribui o espaço igualmente */
+}
+
+.cardBody-section > * {
+  margin-top: 10px;
+  
+}
+
+.dashboard-chart-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 26px; 
+    margin-top: 20px;
+}
+
+.dashboard-chart-container{
+    background-color:#fff;
+    margin-top: 20px;
+    background-color: #fff; /* Cor de fundo cinza claro */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para profundidade */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+}
+
+.dashboard-chart-container2 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    width: 46.5%;
+    
+}
+
+.dashboard-chart-descricao{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #5e6e82;
+}
+
+.toggle-button {
+    background-color: #39374e; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    color: #fff;
+    width: 35px; /* Largura do botão */
+    height: 35px; /* Altura do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-button:hover {
+    background-color: #4b4d60;
+    color: #fff; 
+}
+
+.icon-transition {
+    transition: opacity 0.3s; /* Suaviza a transição */
+    opacity: 1;
+}
+
+.icon-hidden {
+    opacity: 0;
+}
+
+/* Mídia Queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    /* .section-dashboard.open,
+    .section-dashboard.closed {
+        margin-left: 0;
+    } */
+
+    .cardBody-section {
+        flex-direction: column; /* Altera para orientação de coluna em telas menores */
+        align-items: center; /* Alinha os cartões ao centro quando empilhados */
+        width: 100%;
+        
+    }
+    
+    
+}

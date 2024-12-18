@@ -1,0 +1,190 @@
+.ffi-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100%;
+    background-color: #39374e;
+    color: #fff;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 9997;
+    font-size: 14px;
+    display: flex; /* Adicionado para centralizar o conteúdo */
+    flex-direction: column; /* Adicionado para alinhar os itens verticalmente */
+    align-items: center; /* Adicionado para centralizar horizontalmente */
+}
+
+
+/* Para navegadores que suportam a propriedade scrollbar-color */
+.ffi-sidebar::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
+}
+
+.ffi-sidebar::-webkit-scrollbar-thumb {
+    background-color: #f9faff; /* Cor do polegar (parte arrastável) */
+    border-radius: 6px; /* Raio do canto do polegar */
+}
+
+.ffi-sidebar::-webkit-scrollbar-track {
+    background-color: #f9faff; /* Cor da trilha (fundo da barra de rolagem) */
+    border-radius: 6px;
+}
+
+.ffi-sidebar.open {
+    left: -168px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ffi-sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 220px;
+    
+}
+
+
+/* Formatação para ícones e textos no menu aberto */
+.ffi-icon-open {
+    padding: 5px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s, margin-left 0.3s, border-radius 0.3s;
+}
+
+.ffi-icon-open:active {
+    background-color: #d8e2ef;
+    color: #5e6e82;
+    
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    border-radius: 8px;
+}
+
+.ffi-icon-open:hover {
+    background-color: #4b4d60;
+    color: #fff;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, margin-left 0.3s, border-radius 0.3s;
+}
+
+
+.ffi-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 12px;
+    background-color: transparent;
+}
+
+.ffi-icon-open:hover .ffi-icon {
+    
+    color: #fff;
+}
+
+.ffi-icon-open-sub {
+    padding-left: 10px;
+    height: 30px;
+    transition: background-color 0.3s, color 0.3s, margin-left 0.3s, border-radius 0.3s;
+}
+
+.ffi-icon-open-sub-link{
+    font-size: 13px;  
+    text-decoration: none; /* Remove o sublinhado */
+    color: #5e6e82;
+    text-transform: lowercase;
+}
+
+.ffi-icon-open-sub-link:first-letter {
+    text-transform: uppercase; /* Converte a primeira letra de cada palavra para maiúscula */
+}
+
+.ffi-icon-open-sub:hover {
+    
+    /* color: #4b4d60; */
+    /* margin-left: 5px;
+    margin-right: 5px; */
+}
+
+.ffi-icon-open-sub .ffi-icon {
+    width: 5px;
+    height: 5px;
+    /* padding-bottom: 6px; */
+    margin-bottom: 3px;
+}
+
+.ffi-icon-open-sub:hover .ffi-icon {
+    
+    color: #fff;
+}
+
+
+.ffi-icon-closed {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 1;
+}
+
+.ffi-icon-closed .ffi-icon {
+    margin-left: 140px;
+    height: 40px;
+    padding: -2px;
+}
+
+.ffi-icon-closed:hover {
+    background-color: #4b4d60;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.logo-open {
+    width: 180px; /* Largura desejada */
+    height: 90px; /* Altura desejada */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    transition: all 0.4s ease; /* Adiciona transição suave */
+}
+
+.logo-open img {
+    margin-top: 5px;
+    margin-right: 8px;
+    width: 180px; /* Faz a imagem ocupar 100% da largura do container */
+    height: 60px; /* Mantém a proporção da imagem */
+    transition: all 0.4s ease; /* Adiciona transição suave */
+}
+
+.logo-closed {
+    width: 90px; /* Largura desejada */
+    height: 90px; /* Altura desejada */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    margin-left: 168px;
+    transition: all 0.4s ease; /* Adiciona transição suave */
+}
+
+.logo-closed img {
+    margin-top: 5px;
+    width: 70px; /* Faz a imagem ocupar 100% da largura do container */
+    height: 60px; /* Mantém a proporção da imagem */
+    transition: all 0.4s ease; /* Adiciona transição suave */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ffi-icon-closed {
+        display: none;
+    }
+
+    
+        
+}

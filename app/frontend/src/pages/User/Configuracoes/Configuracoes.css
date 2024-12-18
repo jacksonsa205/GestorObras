@@ -1,0 +1,291 @@
+body {
+  background-color: #f9faff;
+  /* Substitua pela cor desejada */
+}
+
+.user-title {
+  font-size: 28px;
+  font-weight: bold;
+  /* Adiciona negrito */
+  color: #5e6e82;
+}
+
+.user-page-section {
+  margin-top: 70px;
+  transition: margin-left 0.3s ease;
+  /* Adicionando transição para suavizar a animação */
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+  /* Adicionando espaçamento interno para afastar o conteúdo da borda */
+  /* margin-right: 10px; */
+  background-color: #f9faff;
+}
+
+.user-page-section.closed {
+  margin-left: 70px;
+  /* Defina o valor desejado quando a barra lateral estiver fechada */
+}
+
+.user-page-section.open {
+  margin-left: 238px;
+  /* Defina o valor desejado quando a barra lateral estiver aberta */
+}
+
+.user-section {
+  display: flex;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  background-color: #fff;
+}
+
+
+
+.dani-container {
+  display: flex;
+  align-items: center;
+  /* Alinha os itens ao centro na direção transversal (horizontal) */
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.dani-container-operador {
+  display: flex;
+  align-items: center;
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+}
+
+.status-ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: blinker 1s linear infinite;
+}
+
+.user-descricao {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #5e6e82;
+}
+
+.user-data-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.user-data-edit {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #fff;
+  flex: 0 0 40%;
+  /* 60% do espaço disponível */
+  /* width: 60%; */
+  height: 360px;
+}
+
+.user-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 5px;
+  margin-right: 15px;
+  border: 1px solid #d1d5e4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  background-color: #fff;
+  color: #5e6e82;
+}
+
+.user-input-disabled {
+  background-color: #e0e0e0;
+  /* Cor de fundo cinza claro */
+  border: 1px solid #ccc;
+  /* Borda cinza */
+}
+
+.user-input-disabled:hover {
+  background-color: #e0e0e0;
+  /* Mantém a mesma cor de fundo no hover */
+  border: 1px solid #ccc;
+  /* Mantém a mesma cor de borda no hover */
+  cursor: not-allowed;
+  /* Muda o cursor para indicar que o input está desabilitado */
+  outline: none;
+  /* Remove o destaque da borda no hover */
+}
+
+.user-card-data-edit {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-direction: column;
+  width: 100%;
+  color: #5e6e82;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-data-order {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+  /* flex: 0 0 30%; */
+  width: 55%;
+  height: 360px;
+  overflow-y: auto;
+  /* Rolagem vertical */
+  overflow-x: hidden;
+  /* Sem rolagem horizontal */
+}
+
+.user-card-data-nome {
+  background-color: #0066ff;
+  height: 44px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 10px;
+  display: flex;
+  /* Torna o container flexível */
+  align-items: center;
+  /* Centraliza verticalmente o conteúdo */
+}
+
+.user-card-data-nome span {
+  color: #fff;
+  /* Cor cinza escuro */
+  font-weight: bold;
+  /* Texto em negrito */
+  font-size: 18px;
+}
+
+.user-card-data-dados {
+  display: flex;
+  margin-top: 4px;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-direction: column;
+  width: 100%;
+  color: #5e6e82;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-card-data-dados span {
+  font-weight: normal;
+  /* Fonte não negritada */
+  color: #FF5733;
+  /* Cor desejada (por exemplo, laranja) */
+  font-size: 16px;
+  word-wrap: break-word;
+  margin-right: 20px;
+}
+
+.user-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.user-salvar-button {
+  padding: 10px;
+  background-color: #0066ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 90%;
+  border-radius: 4px;
+  /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-salvar-button:hover {
+  background-color: #0356C9;
+  /* Cor alterada no hover */
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.status-title {
+  color: #5e6e82;
+  margin-left: 3px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dani-logo {
+  margin: 5px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border: 1px solid #5e6e82;
+  border-radius: 50%;
+}
+
+.dani {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dani-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5e6e82;
+  text-transform: capitalize;
+}
+
+
+
+
+/* Layout para tablets */
+@media (max-width: 768px) {
+  .user-page-section.closed {
+    margin-left: 0;
+    /* Defina o valor desejado quando a barra lateral estiver fechada */
+    z-index: 2;
+    position: relative;
+    overflow-y: auto;
+
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .user-page-section.closed {
+    margin-left: 0;
+    /* Defina o valor desejado quando a barra lateral estiver fechada */
+    z-index: 2;
+    position: relative;
+    overflow-y: auto;
+
+  }
+
+
+}

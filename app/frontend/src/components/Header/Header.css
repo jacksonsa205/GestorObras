@@ -1,0 +1,182 @@
+:root {
+    --color-white: #fff;
+    --color-white: #fff;
+    --color-background:#fff;
+    --color-text: #fff;
+    --font-size-medium: 20px;
+    --font-size-small: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: var(--color-background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* margin-left: 262px; */
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-expanded {
+    margin-left: 260px; /* Ajuste conforme necessário */
+    transition: margin-left 0.3s ease;
+}
+
+.header-collapsed {
+    margin-left: 89px; /* Ajuste conforme necessário */
+    transition: margin-left 0.3s ease;
+}
+
+.menu-button {
+    width: 40px;  /* Largura desejada */
+    height: 40px; /* Altura desejada */
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Removendo a cor de fundo padrão */
+    border: none; /* Removendo a borda padrão */
+    cursor: pointer;
+    box-shadow: none !important;
+    
+}
+
+
+
+
+.notification-container {
+    right: 70px; /* Ajusta a posição horizontal para o canto direito */
+    padding-right: 15px;
+    position: fixed; /* Mantém a posição fixa na tela */
+    
+}
+
+.user-container {
+    right: 32px; /* Ajusta a posição horizontal para o canto direito */
+    width: 30px; /* Largura desejada */
+    height: 30px; /* Altura desejada */
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    position: fixed; /* Mantém a posição fixa na tela */
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.logo-user {
+    width: 42px;
+    height: 42px;
+}
+
+.icon-menu-header {
+    color: '#5e6e82';
+    width: 20px;
+    height: 20px;
+    transition: color 0.3s;
+}
+
+.icon-menu-header:hover {
+    color: #007bff; /* Cor desejada ao passar o mouse */
+}
+
+.icon-header {
+    color: #5e6e82;
+    transition: color 0.3s;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-header:hover {
+    color: #007bff; /* Cor desejada ao passar o mouse */
+}
+
+.user-menu.normal {
+    position: absolute;
+    bottom: -85px;  
+    width: 130px;    
+    height: 70px;    
+    background-color: #fff;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+    margin-right: 80px;
+}
+
+.user-menu.master {
+    position: absolute;
+    bottom: -165px;  
+    width: 130px;    
+    height: 150px;    
+    background-color: #fff;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+    margin-right: 80px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;  /* Metade da largura da seta */
+    border-right: 10px solid transparent;  /* Metade da largura da seta */
+    border-bottom: 10px solid #fff;  /* Altura da seta e cor */
+    position: absolute;
+    top: -10px;  /* Posiciona a seta acima do menu */
+    left: calc(50% + 30px);  /* Desloca a seta 10px para a direita */
+}
+
+.user-menu a {
+    display: flex;  
+    align-items: center;  
+    margin-top: 10px;  
+    color: inherit;  
+    text-decoration: none;  
+    margin-right: 10px;
+    color: #5e6e82;
+    font-size: 14px;
+}
+
+.user-menu a:hover {
+    color: inherit;  
+}
+
+.user-menu a .svg-inline--fa {
+    margin-right: 5px;  
+    margin-left: 10px;
+    color: #5e6e82;
+}
+
+.user-menu a .svg-inline--fa.icon-config {
+    color: #0066ff;  
+}
+
+.user-menu a .svg-inline--fa.icon-logout {
+    color: red;  
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
